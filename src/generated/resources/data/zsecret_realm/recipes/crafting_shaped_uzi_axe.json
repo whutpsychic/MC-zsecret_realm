@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "zsecret_realm:uzi_steel_ingot"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " AA",
+    " BA",
+    " B "
+  ],
+  "result": {
+    "item": "zsecret_realm:uzi_axe"
+  },
+  "show_notification": true
+}

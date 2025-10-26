@@ -1,5 +1,7 @@
 package com.zbc.zsecret_realm.datagen.itemRecipes;
 
+import com.zbc.zsecret_realm.datagen.equipmentRecipes.alloySteelSeries;
+import com.zbc.zsecret_realm.datagen.equipmentRecipes.uziSeries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeProvider;
@@ -19,9 +21,9 @@ public class allShapedCraftRecipes extends RecipeProvider {
 
     public static void register(Consumer<FinishedRecipe> consumer) {
         // 乌兹钢套装
-//        uziSeries.register(consumer);
-        // 不锈钢套装
-//        alloySteelSeries.register(recipeOutput);
+        uziSeries.register(consumer);
+        // 合金钢套装
+        alloySteelSeries.register(consumer);
     }
 
 }

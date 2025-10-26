@@ -1,6 +1,7 @@
 package com.zbc.zsecret_realm.datagen;
 
 import com.zbc.zsecret_realm.Main;
+import com.zbc.zsecret_realm.modItems.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -20,49 +21,39 @@ public class ModItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
 
-//        tag(ItemTags.HOES)
-//                .add(ModItems.ALLOY_STEEL_HOE.get())
-//                .add(ModItems.UZI_HOE.get());
-//
-//        tag(ItemTags.SHOVELS)
-//                .add(ModItems.ALLOY_STEEL_SHOVEL.get())
-//                .add(ModItems.UZI_SHOVEL.get());
-//
-//        tag(ItemTags.PICKAXES)
-//                .add(ModItems.ALLOY_STEEL_PICKAXE.get())
-//                .add(ModItems.UZI_PICKAXE.get());
-//
-//        tag(ItemTags.AXES)
+        tag(ItemTags.HOES)
+                .add(ModItems.ALLOY_HOE.get())
+                .add(ModItems.UZI_HOE.get());
+
+        tag(ItemTags.SHOVELS)
+                .add(ModItems.ALLOY_SHOVEL.get())
+                .add(ModItems.UZI_SHOVEL.get());
+
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.ALLOY_PICKAXE.get())
+                .add(ModItems.UZI_PICKAXE.get());
+
+        tag(ItemTags.AXES)
 //                .add(ModItems.ICE_AXE.get())
-//                .add(ModItems.ALLOY_STEEL_AXE.get())
-//                .add(ModItems.UZI_AXE.get());
-//
-//        tag(ItemTags.SWORDS)
+                .add(ModItems.ALLOY_AXE.get())
+                .add(ModItems.UZI_AXE.get());
+
+        tag(ItemTags.SWORDS)
 //                .add(ModItems.ENDER_SWORD.get())
 //                .add(ModItems.WIND_SWORD.get())
 //                .add(ModItems.BLAZE_SWORD.get())
-//                .add(ModItems.ALLOY_STEEL_SWORD.get())
-//                .add(ModItems.UZI_SWORD.get());
-//
-//        tag(ItemTags.ARMOR_ENCHANTABLE)
-//                .add(ModItems.UZI_HELMET.get())
-//                .add(ModItems.UZI_CHESTPLATE.get())
-//                .add(ModItems.UZI_LEGGINGS.get())
-//                .add(ModItems.UZI_BOOTS.get())
-//                .add(ModItems.ALLOY_STEEL_HELMET.get())
-//                .add(ModItems.ALLOY_STEEL_CHESTPLATE.get())
-//                .add(ModItems.ALLOY_STEEL_LEGGINGS.get())
-//                .add(ModItems.ALLOY_STEEL_BOOTS.get());
-//
-//        tag(ItemTags.TRIMMABLE_ARMOR)
-//                .add(ModItems.UZI_HELMET.get())
-//                .add(ModItems.UZI_CHESTPLATE.get())
-//                .add(ModItems.UZI_LEGGINGS.get())
-//                .add(ModItems.UZI_BOOTS.get())
-//                .add(ModItems.ALLOY_STEEL_HELMET.get())
-//                .add(ModItems.ALLOY_STEEL_CHESTPLATE.get())
-//                .add(ModItems.ALLOY_STEEL_LEGGINGS.get())
-//                .add(ModItems.ALLOY_STEEL_BOOTS.get());
+                .add(ModItems.ALLOY_SWORD.get())
+                .add(ModItems.UZI_SWORD.get());
+
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.ALLOY_HELMET.get())
+                .add(ModItems.ALLOY_CHESTPLATE.get())
+                .add(ModItems.ALLOY_LEGGINGS.get())
+                .add(ModItems.ALLOY_BOOTS.get())
+                .add(ModItems.UZI_HELMET.get())
+                .add(ModItems.UZI_CHESTPLATE.get())
+                .add(ModItems.UZI_LEGGINGS.get())
+                .add(ModItems.UZI_BOOTS.get());
 
     }
 }

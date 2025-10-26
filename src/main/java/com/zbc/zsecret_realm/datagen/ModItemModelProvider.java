@@ -48,30 +48,29 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.ALLOY_STEEL_INGOT.get());
         basicItem(ModItems.METEORITE_STEEL_INGOT.get());
 
-
         // 注册物品模型
         // 乌兹套
-//        handheldItem(ModItems.UZI_HOE.get());
-//        handheldItem(ModItems.UZI_SHOVEL.get());
-//        handheldItem(ModItems.UZI_PICKAXE.get());
-//        handheldItem(ModItems.UZI_AXE.get());
-//        handheldItem(ModItems.UZI_SWORD.get());
-//        trimmedArmorItem(ModItems.UZI_HELMET);
-//        trimmedArmorItem(ModItems.UZI_CHESTPLATE);
-//        trimmedArmorItem(ModItems.UZI_LEGGINGS);
-//        trimmedArmorItem(ModItems.UZI_BOOTS);
+        handheldItem(ModItems.UZI_HOE);
+        handheldItem(ModItems.UZI_SHOVEL);
+        handheldItem(ModItems.UZI_PICKAXE);
+        handheldItem(ModItems.UZI_AXE);
+        handheldItem(ModItems.UZI_SWORD);
+        trimmedArmorItem(ModItems.UZI_HELMET);
+        trimmedArmorItem(ModItems.UZI_CHESTPLATE);
+        trimmedArmorItem(ModItems.UZI_LEGGINGS);
+        trimmedArmorItem(ModItems.UZI_BOOTS);
 
-//        // 不锈钢套
-//        handheldItem(ModItems.ALLOY_STEEL_HOE.get());
-//        handheldItem(ModItems.ALLOY_STEEL_SHOVEL.get());
-//        handheldItem(ModItems.ALLOY_STEEL_PICKAXE.get());
-//        handheldItem(ModItems.ALLOY_STEEL_AXE.get());
-//        handheldItem(ModItems.ALLOY_STEEL_SWORD.get());
-//        trimmedArmorItem(ModItems.ALLOY_STEEL_HELMET);
-//        trimmedArmorItem(ModItems.ALLOY_STEEL_CHESTPLATE);
-//        trimmedArmorItem(ModItems.ALLOY_STEEL_LEGGINGS);
-//        trimmedArmorItem(ModItems.ALLOY_STEEL_BOOTS);
-//
+        // 合金钢套
+        handheldItem(ModItems.ALLOY_HOE);
+        handheldItem(ModItems.ALLOY_SHOVEL);
+        handheldItem(ModItems.ALLOY_PICKAXE);
+        handheldItem(ModItems.ALLOY_AXE);
+        handheldItem(ModItems.ALLOY_SWORD);
+        trimmedArmorItem(ModItems.ALLOY_HELMET);
+        trimmedArmorItem(ModItems.ALLOY_CHESTPLATE);
+        trimmedArmorItem(ModItems.ALLOY_LEGGINGS);
+        trimmedArmorItem(ModItems.ALLOY_BOOTS);
+
 //        // 传说武器
 //        handheldItem(ModItems.BLAZE_SWORD.get());
 //        handheldItem(ModItems.ICE_AXE.get());
@@ -81,7 +80,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 //
 //        // 原材料
 //        basicItem(ModItems.UZI_STEEL_INGOT.get());
-//        basicItem(ModItems.ALLOY_STEEL_INGOT.get());
+//        basicItem(ModItems.ALLOY_INGOT.get());
 //        basicItem(ModItems.METEORITE_STEEL_INGOT.get());
 //
 //        // 珍珠
@@ -109,46 +108,37 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     // Shoutout to El_Redstoniano for making this
     private void trimmedArmorItem(RegistryObject<ArmorItem> itemDeferredItem) {
-        final String MOD_ID = Main.MOD_ID;
         ArmorItem armorItem = itemDeferredItem.get();
-        trimMaterials.forEach((trimMaterial, value) -> {
-            float trimValue = value;
+        if (armorItem instanceof ArmorItem) {
+            trimMaterials.forEach((trimMaterial, value) -> {
+                float trimValue = value;
 
-            String armorType = switch (armorItem.getEquipmentSlot()) {
-                case HEAD -> "helmet";
-                case CHEST -> "chestplate";
-                case LEGS -> "leggings";
-                case FEET -> "boots";
-                default -> "";
-            };
+                String armorType = switch (armorItem.getEquipmentSlot()) {
+                    case HEAD -> "helmet";
+                    case CHEST -> "chestplate";
+                    case LEGS -> "leggings";
+                    case FEET -> "boots";
+                    default -> "";
+                };
 
-            String armorItemPath = armorItem.toString();
-            String trimPath = "trims/items/" + armorType + "_trim_" + trimMaterial.location().getPath();
-            String currentTrimName = armorItemPath + "_" + trimMaterial.location().getPath() + "_trim";
-            ResourceLocation armorItemResLoc = new ResourceLocation(armorItemPath);
-            ResourceLocation trimResLoc = new ResourceLocation(trimPath); // minecraft namespace
-            ResourceLocation trimNameResLoc = new ResourceLocation(currentTrimName);
+                String armorItemPath = armorItem.toString();
+                String trimPath = "trims/items/" + armorType + "_trim_" + trimMaterial.location().getPath();
+                String currentTrimName = armorItemPath + "_" + trimMaterial.location().getPath() + "_trim";
+                ResourceLocation armorItemResLoc = new ResourceLocation(armorItemPath);
+                ResourceLocation trimResLoc = new ResourceLocation(trimPath); // minecraft namespace
+                ResourceLocation trimNameResLoc = new ResourceLocation(Main.MOD_ID + ":" + currentTrimName);
 
-            // This is used for making the ExistingFileHelper acknowledge that this texture exist, so this will
-            // avoid an IllegalArgumentException
-            existingFileHelper.trackGenerated(trimResLoc, PackType.CLIENT_RESOURCES, ".png", "textures");
+                // This is used for making the ExistingFileHelper acknowledge that this texture exist, so this will
+                // avoid an IllegalArgumentException
+                existingFileHelper.trackGenerated(trimResLoc, PackType.CLIENT_RESOURCES, ".png", "textures");
 
-            // Trimmed armorItem files
-            getBuilder(currentTrimName)
-                    .parent(new ModelFile.UncheckedModelFile("item/generated"))
-                    .texture("layer0", armorItemResLoc.getNamespace() + ":item/" + armorItemResLoc.getPath())
-                    .texture("layer1", trimResLoc);
+                // Trimmed armorItem files
+                getBuilder(currentTrimName).parent(new ModelFile.UncheckedModelFile("item/generated")).texture("layer0", Main.MOD_ID + ":item/" + armorItemResLoc.getPath()).texture("layer1", trimResLoc);
 
-            // Non-trimmed armorItem file (normal variant)
-            this.withExistingParent(itemDeferredItem.getId().getPath(),
-                            mcLoc("item/generated"))
-                    .override()
-                    .model(new ModelFile.UncheckedModelFile(trimNameResLoc.getNamespace() + ":item/" + trimNameResLoc.getPath()))
-                    .predicate(mcLoc("trim_type"), trimValue).end()
-                    .texture("layer0",
-                            new ResourceLocation(MOD_ID,
-                                    "item/" + itemDeferredItem.getId().getPath()));
-        });
+                // Non-trimmed armorItem file (normal variant)
+                this.withExistingParent(itemDeferredItem.getId().getPath(), mcLoc("item/generated")).override().model(new ModelFile.UncheckedModelFile(Main.MOD_ID + ":item/" + trimNameResLoc.getPath())).predicate(mcLoc("trim_type"), trimValue).end().texture("layer0", new ResourceLocation(Main.MOD_ID, "item/" + itemDeferredItem.getId().getPath()));
+            });
+        }
     }
 
     private ItemModelBuilder handheldItem(RegistryObject<?> item) {

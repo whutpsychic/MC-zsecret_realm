@@ -1,1 +1,7 @@
-// 1.20.1	2025-10-26T15:51:17.8745473	Tags for minecraft:item mod id zsecret_realm
+// 1.20.1	2025-10-27T00:16:15.4508145	Tags for minecraft:item mod id zsecret_realm
+4ec002980138edde8d48f89a7c1f2e5ebfd87792 data/minecraft/tags/items/axes.json
+63a76b1ec962e669c97dd3ddb00cd9446cdac16e data/minecraft/tags/items/hoes.json
+b1c186990484c17bb2307cfbe9d0b91f0ecd52f6 data/minecraft/tags/items/pickaxes.json
+2eaaac9a870a853c2cdaab3233e26b292719ade4 data/minecraft/tags/items/shovels.json
+5e95ced473b00a927c388f8a351a2e6df3cd3343 data/minecraft/tags/items/swords.json
+19bf982880bc82606b9b9bf2da1b6c8f244eab0a data/minecraft/tags/items/trimmable_armor.json

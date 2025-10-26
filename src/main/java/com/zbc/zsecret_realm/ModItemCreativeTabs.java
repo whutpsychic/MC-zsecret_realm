@@ -26,6 +26,26 @@ public class ModItemCreativeTabs {
                         output.accept(ModItems.ALLOY_STEEL_INGOT.get());
                         output.accept(ModItems.METEORITE_STEEL_INGOT.get());
 
+                        output.accept(ModItems.UZI_HOE.get());
+                        output.accept(ModItems.UZI_SHOVEL.get());
+                        output.accept(ModItems.UZI_PICKAXE.get());
+                        output.accept(ModItems.UZI_AXE.get());
+                        output.accept(ModItems.UZI_SWORD.get());
+                        output.accept(ModItems.UZI_HELMET.get());
+                        output.accept(ModItems.UZI_CHESTPLATE.get());
+                        output.accept(ModItems.UZI_LEGGINGS.get());
+                        output.accept(ModItems.UZI_BOOTS.get());
+
+                        output.accept(ModItems.ALLOY_HOE.get());
+                        output.accept(ModItems.ALLOY_SHOVEL.get());
+                        output.accept(ModItems.ALLOY_PICKAXE.get());
+                        output.accept(ModItems.ALLOY_AXE.get());
+                        output.accept(ModItems.ALLOY_SWORD.get());
+                        output.accept(ModItems.ALLOY_HELMET.get());
+                        output.accept(ModItems.ALLOY_CHESTPLATE.get());
+                        output.accept(ModItems.ALLOY_LEGGINGS.get());
+                        output.accept(ModItems.ALLOY_BOOTS.get());
+
                     }).build());
 
 //    // 秘境传说：魔法

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "zsecret_realm:crafting_shaped_uzi_sword"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_uzi": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "zsecret_realm:uzi_steel_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_uzi",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "zsecret_realm:crafting_shaped_uzi_sword"
+    ]
+  },
+  "sends_telemetry_event": false
+}
