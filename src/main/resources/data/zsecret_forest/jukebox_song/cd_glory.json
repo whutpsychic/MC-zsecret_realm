@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.zsecret_realm.cd_glory.desc"
+  },
+  "length_in_seconds": 111.0,
+  "sound_event": "zsecret_realm:cd_glory"
+}

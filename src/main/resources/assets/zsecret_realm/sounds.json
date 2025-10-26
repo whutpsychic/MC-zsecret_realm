@@ -1,0 +1,42 @@
+{
+  "cd_tit": {
+    "sounds": [
+      {
+        "name": "zsecret_realm:cd_tit",
+        "stream": true
+      }
+    ]
+  },
+  "cd_glory": {
+    "sounds": [
+      {
+        "name": "zsecret_realm:cd_glory",
+        "stream": true
+      }
+    ]
+  },
+  "cd_asha": {
+    "sounds": [
+      {
+        "name": "zsecret_realm:cd_asha",
+        "stream": true
+      }
+    ]
+  },
+  "cd_magica": {
+    "sounds": [
+      {
+        "name": "zsecret_realm:cd_magica",
+        "stream": true
+      }
+    ]
+  },
+  "cd_harvest": {
+    "sounds": [
+      {
+        "name": "zsecret_realm:cd_harvest",
+        "stream": true
+      }
+    ]
+  }
+}
