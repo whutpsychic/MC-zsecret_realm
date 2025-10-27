@@ -14,30 +14,6 @@ public class ModItemCreativeTabs {
 
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Main.MOD_ID);
 
-    // 秘境传说：魔法
-    public static final Supplier<CreativeModeTab> MAGIC_TAB = CREATIVE_MODE_TAB.register("magic_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.WIND_RING.get()))
-                    .title(Component.translatable("itemGroup.zsecret_realm.magic_tab"))
-                    .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.WIND_RING.get());
-                        output.accept(ModItems.FIRE_RING.get());
-                        output.accept(ModItems.ICE_RING.get());
-                        output.accept(ModItems.THUNDER_RING.get());
-                        output.accept(ModItems.ENDER_RING.get());
-                        output.accept(ModItems.LIGHT_RING.get());
-
-
-                    }).build());
-
-//    // 秘境传说：科技
-//    public static final Supplier<CreativeModeTab> TECH_TAB = CREATIVE_MODE_TAB.register("tech_tab",
-//            () -> CreativeModeTab.builder().icon(() -> new ItemStack(Items.ENCHANTED_GOLDEN_APPLE))
-//                    .title(Component.translatable("itemGroup.zsecret_realm.tech_tab"))
-//                    .displayItems((itemDisplayParameters, output) -> {
-//
-//
-//                    }).build());
-
     // 秘境传说：常规
     public static final Supplier<CreativeModeTab> MOD_TAB = CREATIVE_MODE_TAB.register("main_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.UZI_STEEL_INGOT.get()))
@@ -71,5 +47,42 @@ public class ModItemCreativeTabs {
                         output.accept(ModItems.ALLOY_BOOTS.get());
 
                     }).build());
+
+    // 秘境传说：魔法
+    public static final Supplier<CreativeModeTab> MAGIC_TAB = CREATIVE_MODE_TAB.register("mod_tab2",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.WIND_RING.get()))
+                    .title(Component.translatable("itemGroup.zsecret_realm.magic_tab"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.WIND_RING.get());
+                        output.accept(ModItems.FIRE_RING.get());
+                        output.accept(ModItems.ICE_RING.get());
+                        output.accept(ModItems.THUNDER_RING.get());
+                        output.accept(ModItems.ENDER_RING.get());
+                        output.accept(ModItems.LIGHT_RING.get());
+
+                        output.accept(ModItems.WIND_PEARL.get());
+                        output.accept(ModItems.FIRE_PEARL.get());
+                        output.accept(ModItems.ICE_PEARL.get());
+                        output.accept(ModItems.THUNDER_PEARL.get());
+                        output.accept(ModItems.LIGHT_PEARL.get());
+
+                        output.accept(ModItems.WIND_SWORD.get());
+                        output.accept(ModItems.BLAZE_SWORD.get());
+                        output.accept(ModItems.ICE_AXE.get());
+                        output.accept(ModItems.THUNDER_AXE.get());
+                        output.accept(ModItems.ENDER_SWORD.get());
+                        output.accept(ModItems.LIGHT_LARGE_SWORD.get());
+                        output.accept(ModItems.WORLD_DESTRUCT_SWORD.get());
+                    }).build());
+
+//    // 秘境传说：科技
+//    public static final Supplier<CreativeModeTab> TECH_TAB = CREATIVE_MODE_TAB.register("mod_tab3",
+//            () -> CreativeModeTab.builder().icon(() -> new ItemStack(Items.ENCHANTED_GOLDEN_APPLE))
+//                    .title(Component.translatable("itemGroup.zsecret_realm.tech_tab"))
+//                    .displayItems((itemDisplayParameters, output) -> {
+//
+//
+//                    }).build());
+
 
 }

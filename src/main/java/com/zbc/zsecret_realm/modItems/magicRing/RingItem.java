@@ -14,7 +14,7 @@ import java.util.List;
 
 public class RingItem extends Item {
     private String subtitle;  // 副标题文字
-    private final ChatFormatting subtitleColor = ChatFormatting.DARK_PURPLE;  // 副标题默认是紫色的
+    private final ChatFormatting subtitleColor = ChatFormatting.YELLOW;  // 副标题默认是黄色的
 
     // 默认声明方式
     public RingItem(Properties p_41383_) {

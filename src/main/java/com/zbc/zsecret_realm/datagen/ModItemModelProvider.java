@@ -79,27 +79,23 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.ENDER_RING.get());
         basicItem(ModItems.LIGHT_RING.get());
 
-//        // 传说武器
-//        handheldItem(ModItems.BLAZE_SWORD.get());
-//        handheldItem(ModItems.ICE_AXE.get());
-//        handheldItem(ModItems.WIND_SWORD.get());
-//        handheldItem(ModItems.ENDER_SWORD.get());
-//        handheldItem(ModItems.WORLD_DESTRUCT_SWORD.get());
-//
-//        // 原材料
-//        basicItem(ModItems.UZI_STEEL_INGOT.get());
-//        basicItem(ModItems.ALLOY_INGOT.get());
-//        basicItem(ModItems.METEORITE_STEEL_INGOT.get());
-//
-//        // 珍珠
-//        basicItem(ModItems.WIND_PEARL.get());
-//        basicItem(ModItems.FIRE_PEARL.get());
-//        basicItem(ModItems.ICE_PEARL.get());
-//        basicItem(ModItems.THUNDER_PEARL.get());
-//        basicItem(ModItems.LIGHT_PEARL.get());
-//
+        // 珍珠
+        basicItem(ModItems.WIND_PEARL.get());
+        basicItem(ModItems.FIRE_PEARL.get());
+        basicItem(ModItems.ICE_PEARL.get());
+        basicItem(ModItems.THUNDER_PEARL.get());
+        basicItem(ModItems.LIGHT_PEARL.get());
 
-//
+        // 传说武器
+        handheldItem(ModItems.WIND_SWORD);
+        handheldItem(ModItems.BLAZE_SWORD);
+        handheldItem(ModItems.ICE_AXE);
+        handheldItem(ModItems.THUNDER_AXE);
+        handheldItem(ModItems.ENDER_SWORD);
+        handheldItem(ModItems.LIGHT_LARGE_SWORD);
+        handheldItem(ModItems.WORLD_DESTRUCT_SWORD);
+
+
 //        // CD
 //        basicItem(ModItems.CD_TIT.get());
 //        basicItem(ModItems.CD_GLORY.get());
@@ -135,10 +131,15 @@ public class ModItemModelProvider extends ItemModelProvider {
                 existingFileHelper.trackGenerated(trimResLoc, PackType.CLIENT_RESOURCES, ".png", "textures");
 
                 // Trimmed armorItem files
-                getBuilder(currentTrimName).parent(new ModelFile.UncheckedModelFile("item/generated")).texture("layer0", Main.MOD_ID + ":item/" + armorItemResLoc.getPath()).texture("layer1", trimResLoc);
+                getBuilder(currentTrimName).parent(new ModelFile.UncheckedModelFile("item/generated"))
+                        .texture("layer0", Main.MOD_ID + ":item/" + armorItemResLoc.getPath())
+                        .texture("layer1", trimResLoc);
 
                 // Non-trimmed armorItem file (normal variant)
-                this.withExistingParent(itemDeferredItem.getId().getPath(), mcLoc("item/generated")).override().model(new ModelFile.UncheckedModelFile(Main.MOD_ID + ":item/" + trimNameResLoc.getPath())).predicate(mcLoc("trim_type"), trimValue).end().texture("layer0", new ResourceLocation(Main.MOD_ID, "item/" + itemDeferredItem.getId().getPath()));
+                this.withExistingParent(itemDeferredItem.getId().getPath(), mcLoc("item/generated")).override()
+                        .model(new ModelFile.UncheckedModelFile(Main.MOD_ID + ":item/" + trimNameResLoc.getPath()))
+                        .predicate(mcLoc("trim_type"), trimValue).end()
+                        .texture("layer0", new ResourceLocation(Main.MOD_ID, "item/" + itemDeferredItem.getId().getPath()));
             });
         }
     }

@@ -16,11 +16,11 @@ import java.util.function.Supplier;
 public enum ModTiers implements Tier {
 
     // 乌兹钢
-    UZI_STEEL(2, 500, 6.0F, 2.0F, 14, () -> Ingredient.of(ModItems.UZI_STEEL_INGOT.get())),
+    UZI(2, 500, 6.0F, 2.0F, 14, () -> Ingredient.of(ModItems.UZI_STEEL_INGOT.get())),
     // 合金钢
-    ALLOY_STEEL(3, 1200, 8.0F, 3.0F, 14, () -> Ingredient.of(ModItems.ALLOY_STEEL_INGOT.get())),
+    ALLOY(3, 1200, 8.0F, 3.0F, 14, () -> Ingredient.of(ModItems.ALLOY_STEEL_INGOT.get())),
     // 天外陨铁
-    METEORITE_STEEL(4, 3032, 8.0F, 3.0F, 25, () -> Ingredient.of(ModItems.METEORITE_STEEL_INGOT.get()));
+    METEORITE(4, 3032, 9.0F, 4.0F, 15, () -> Ingredient.of(ModItems.METEORITE_STEEL_INGOT.get()));
 
     private final int level;
     private final int uses;
@@ -70,8 +70,8 @@ public enum ModTiers implements Tier {
     private static TagKey<Block> getTagFromVanillaTier(ModTiers tier) {
         TagKey var10000;
         switch (tier) {
-            case UZI_STEEL, ALLOY_STEEL -> var10000 = BlockTags.NEEDS_IRON_TOOL;
-            case METEORITE_STEEL -> var10000 = Tags.Blocks.NEEDS_NETHERITE_TOOL;
+            case UZI, ALLOY -> var10000 = BlockTags.NEEDS_IRON_TOOL;
+            case METEORITE -> var10000 = Tags.Blocks.NEEDS_NETHERITE_TOOL;
             default -> throw new IncompatibleClassChangeError();
         }
         return var10000;

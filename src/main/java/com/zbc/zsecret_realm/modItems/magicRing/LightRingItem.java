@@ -23,7 +23,7 @@ import static com.zbc.zsecret_realm.zcore.livingEntity.doAction.addEffectToLivin
 
 public class LightRingItem extends Item {
     private String subtitle;  // 副标题文字
-    private final ChatFormatting subtitleColor = ChatFormatting.DARK_PURPLE;  // 副标题默认是紫色的
+    private final ChatFormatting subtitleColor = ChatFormatting.YELLOW;  // 副标题默认是黄色的
 
     // 物品使用冷却时间
     private final int coolDownTicks = developing ? 20 : 20 * 10;

@@ -12,6 +12,11 @@ public class DoAction {
         world.explode(entity, position.getX(), position.getY(), position.getZ(), 4.0F, causeFire, Level.ExplosionInteraction.TNT);
     }
 
+    // 在某位置起爆，爆炸半径为r
+    // 伤害来源为entity，是否起火causeFire
+    public static void genExplode(Level world, BlockPos position, Entity entity, boolean causeFire, float r) {
+        world.explode(entity, position.getX(), position.getY(), position.getZ(), r, causeFire, Level.ExplosionInteraction.TNT);
+    }
 
     // 将天气改为雷暴
     public static void turnWeatherToThunder(Level world) {

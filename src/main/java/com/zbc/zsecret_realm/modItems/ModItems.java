@@ -2,6 +2,8 @@ package com.zbc.zsecret_realm.modItems;
 
 import com.zbc.zsecret_realm.Main;
 
+import com.zbc.zsecret_realm.modItems.epicWeapon.*;
+import com.zbc.zsecret_realm.modItems.magicPearl.*;
 import com.zbc.zsecret_realm.modItems.magicRing.EnderRingItem;
 import com.zbc.zsecret_realm.modItems.magicRing.LightRingItem;
 import com.zbc.zsecret_realm.modItems.magicRing.RingItem;
@@ -17,7 +19,6 @@ public class ModItems {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Main.MOD_ID);
 
-    // --------------------------------------------------------- 以上为测试系列 ---------------------------------------------------------
     // 碳粉
     public static final RegistryObject<Item> COAL_POWDER = ITEMS.register("coal_powder", () -> new ModItem(new Item.Properties(), "coal_powder"));
     // 加碳生铁
@@ -32,15 +33,15 @@ public class ModItems {
     public static final RegistryObject<Item> METEORITE_STEEL_INGOT = ITEMS.register("meteorite_steel_ingot", () -> new ModItem(new Item.Properties(), "meteorite_steel_ingot", ChatFormatting.YELLOW, true));
 
     // 钢锄
-    public static final RegistryObject<Item> UZI_HOE = ITEMS.register("uzi_hoe", () -> new HoeItem(ModTiers.UZI_STEEL, -2, -1.0F, new Item.Properties()));
+    public static final RegistryObject<Item> UZI_HOE = ITEMS.register("uzi_hoe", () -> new HoeItem(ModTiers.UZI, -2, -1.0F, new Item.Properties()));
     // 钢铲
-    public static final RegistryObject<Item> UZI_SHOVEL = ITEMS.register("uzi_shovel", () -> new ShovelItem(ModTiers.UZI_STEEL, 1.5F, -3.0F, new Item.Properties()));
+    public static final RegistryObject<Item> UZI_SHOVEL = ITEMS.register("uzi_shovel", () -> new ShovelItem(ModTiers.UZI, 1.5F, -3.0F, new Item.Properties()));
     // 钢镐
-    public static final RegistryObject<Item> UZI_PICKAXE = ITEMS.register("uzi_pickaxe", () -> new PickaxeItem(ModTiers.UZI_STEEL, 1, -2.8F, new Item.Properties()));
+    public static final RegistryObject<Item> UZI_PICKAXE = ITEMS.register("uzi_pickaxe", () -> new PickaxeItem(ModTiers.UZI, 1, -2.8F, new Item.Properties()));
     // 钢斧
-    public static final RegistryObject<Item> UZI_AXE = ITEMS.register("uzi_axe", () -> new AxeItem(ModTiers.UZI_STEEL, 6.0F, -3.0F, new Item.Properties()));
+    public static final RegistryObject<Item> UZI_AXE = ITEMS.register("uzi_axe", () -> new AxeItem(ModTiers.UZI, 6.0F, -3.1F, new Item.Properties()));
     // 钢剑
-    public static final RegistryObject<Item> UZI_SWORD = ITEMS.register("uzi_sword", () -> new SwordItem(ModTiers.UZI_STEEL, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> UZI_SWORD = ITEMS.register("uzi_sword", () -> new SwordItem(ModTiers.UZI, 3, -2.4F, new Item.Properties()));
     // 钢头盔
     public static final RegistryObject<ArmorItem> UZI_HELMET = ITEMS.register("uzi_helmet", () -> new ArmorItem(ModArmorMaterials.UZI, ArmorItem.Type.HELMET, new Item.Properties()));
     // 钢胸甲
@@ -51,15 +52,15 @@ public class ModItems {
     public static final RegistryObject<ArmorItem> UZI_BOOTS = ITEMS.register("uzi_boots", () -> new ArmorItem(ModArmorMaterials.UZI, ArmorItem.Type.BOOTS, new Item.Properties()));
 
     // 合金钢锄
-    public static final RegistryObject<Item> ALLOY_HOE = ITEMS.register("alloy_hoe", () -> new HoeItem(ModTiers.ALLOY_STEEL, -3, 0.0F, new Item.Properties()));
+    public static final RegistryObject<Item> ALLOY_HOE = ITEMS.register("alloy_hoe", () -> new HoeItem(ModTiers.ALLOY, -3, 0.0F, new Item.Properties()));
     // 合金钢铲
-    public static final RegistryObject<Item> ALLOY_SHOVEL = ITEMS.register("alloy_shovel", () -> new ShovelItem(ModTiers.ALLOY_STEEL, 1.5F, -3.0F, new Item.Properties()));
+    public static final RegistryObject<Item> ALLOY_SHOVEL = ITEMS.register("alloy_shovel", () -> new ShovelItem(ModTiers.ALLOY, 1.5F, -3.0F, new Item.Properties()));
     // 合金钢镐
-    public static final RegistryObject<Item> ALLOY_PICKAXE = ITEMS.register("alloy_pickaxe", () -> new PickaxeItem(ModTiers.ALLOY_STEEL, 1, -2.8F, new Item.Properties()));
+    public static final RegistryObject<Item> ALLOY_PICKAXE = ITEMS.register("alloy_pickaxe", () -> new PickaxeItem(ModTiers.ALLOY, 1, -2.8F, new Item.Properties()));
     // 合金钢斧
-    public static final RegistryObject<Item> ALLOY_AXE = ITEMS.register("alloy_axe", () -> new AxeItem(ModTiers.ALLOY_STEEL, 5.0F, -3.0F, new Item.Properties()));
+    public static final RegistryObject<Item> ALLOY_AXE = ITEMS.register("alloy_axe", () -> new AxeItem(ModTiers.ALLOY, 5.0F, -3.0F, new Item.Properties()));
     // 合金钢剑
-    public static final RegistryObject<Item> ALLOY_SWORD = ITEMS.register("alloy_sword", () -> new SwordItem(ModTiers.ALLOY_STEEL, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> ALLOY_SWORD = ITEMS.register("alloy_sword", () -> new SwordItem(ModTiers.ALLOY, 3, -2.4F, new Item.Properties()));
     // 合金钢头盔
     public static final RegistryObject<ArmorItem> ALLOY_HELMET = ITEMS.register("alloy_helmet", () -> new ArmorItem(ModArmorMaterials.ALLOY, ArmorItem.Type.HELMET, new Item.Properties()));
     // 合金钢胸甲
@@ -82,29 +83,31 @@ public class ModItems {
     // 光之戒
     public static final RegistryObject<Item> LIGHT_RING = ITEMS.register("light_ring", () -> new LightRingItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1), "light_ring"));
 
+    // 聚风灵珠
+    public static final RegistryObject<Item> WIND_PEARL = ITEMS.register("wind_pearl", () -> new WindPearlItem(new Item.Properties().stacksTo(16)));
+    // 爆炎魔珠
+    public static final RegistryObject<Item> FIRE_PEARL = ITEMS.register("fire_pearl", () -> new FirePearlItem(new Item.Properties().stacksTo(16)));
+    // 霜冰凝珠
+    public static final RegistryObject<Item> ICE_PEARL = ITEMS.register("ice_pearl", () -> new IcePearlItem(new Item.Properties().stacksTo(16)));
+    // 唤雷法珠
+    public static final RegistryObject<Item> THUNDER_PEARL = ITEMS.register("thunder_pearl", () -> new ThunderPearlItem(new Item.Properties().stacksTo(16)));
+    // 极光霞珠
+    public static final RegistryObject<Item> LIGHT_PEARL = ITEMS.register("light_pearl", () -> new LightPearlItem(new Item.Properties().stacksTo(16)));
 
-//    // 烈焰剑
-//    public static final RegistryObject<Item> BLAZE_SWORD = ITEMS.register("blaze_sword", () -> new BlazeSwordItem(Tiers.NETHERITE, new Item.Properties()));
-//    // 寒冰斧
-//    public static final RegistryObject<Item> ICE_AXE = ITEMS.register("ice_axe", () -> new IceAxeItem(Tiers.NETHERITE, new Item.Properties()));
-//    // 疾风剑
-//    public static final RegistryObject<Item> WIND_SWORD = ITEMS.register("wind_sword", () -> new WindSwordItem(Tiers.NETHERITE, new Item.Properties()));
-//    // 暗影剑
-//    public static final RegistryObject<Item> ENDER_SWORD = ITEMS.register("ender_sword", () -> new EnderSwordItem(Tiers.NETHERITE, new Item.Properties()));
-//    // 灭世魔刀
-//    public static final RegistryObject<Item> WORLD_DESTRUCT_SWORD = ITEMS.register("world_destruct_sword", () -> new WorldDestructSwordItem(ModTiers.METEORITE, new Item.Properties()));
-
-
-//    // 聚风灵珠
-//    public static final RegistryObject<Item> WIND_PEARL = ITEMS.register("wind_pearl", () -> new WindPearlItem(new Item.Properties().stacksTo(16)));
-//    // 爆炎魔珠
-//    public static final RegistryObject<Item> FIRE_PEARL = ITEMS.register("fire_pearl", () -> new FirePearlItem(new Item.Properties().stacksTo(16)));
-//    // 霜冰灵珠
-//    public static final RegistryObject<Item> ICE_PEARL = ITEMS.register("ice_pearl", () -> new IcePearlItem(new Item.Properties().stacksTo(16)));
-//    // 唤雷魔珠
-//    public static final RegistryObject<Item> THUNDER_PEARL = ITEMS.register("thunder_pearl", () -> new ThunderPearlItem(new Item.Properties().stacksTo(16)));
-//    // 极光霞珠
-//    public static final RegistryObject<Item> LIGHT_PEARL = ITEMS.register("light_pearl", () -> new LightPearlItem(new Item.Properties().stacksTo(16)));
+    // 疾风剑
+    public static final RegistryObject<Item> WIND_SWORD = ITEMS.register("wind_sword", () -> new WindSwordItem(ModTiers.METEORITE, 4, 2, (new Item.Properties().rarity(Rarity.EPIC)).fireResistant()));
+    // 烈焰剑
+    public static final RegistryObject<Item> BLAZE_SWORD = ITEMS.register("blaze_sword", () -> new BlazeSwordItem(ModTiers.METEORITE, 4, -2.4F, (new Item.Properties().rarity(Rarity.EPIC)).fireResistant()));
+    // 寒冰斧
+    public static final RegistryObject<Item> ICE_AXE = ITEMS.register("ice_axe", () -> new IceAxeItem(ModTiers.METEORITE, 6, -3, (new Item.Properties().rarity(Rarity.EPIC)).fireResistant()));
+    // 奔雷斧
+    public static final RegistryObject<Item> THUNDER_AXE = ITEMS.register("thunder_axe", () -> new ThunderAxeItem(ModTiers.METEORITE, 6, -3, (new Item.Properties().rarity(Rarity.EPIC)).fireResistant()));
+    // 暗影剑
+    public static final RegistryObject<Item> ENDER_SWORD = ITEMS.register("ender_sword", () -> new EnderSwordItem(ModTiers.METEORITE, 4, -2.4F, (new Item.Properties().rarity(Rarity.EPIC)).fireResistant()));
+    // 光之大剑
+    public static final RegistryObject<Item> LIGHT_LARGE_SWORD = ITEMS.register("light_large_sword", () -> new LightLargeSwordItem(ModTiers.METEORITE, 5, -3F, (new Item.Properties().rarity(Rarity.EPIC)).fireResistant()));
+    // 灭世魔刀
+    public static final RegistryObject<Item> WORLD_DESTRUCT_SWORD = ITEMS.register("world_destruct_sword", () -> new WorldDestructSwordItem(ModTiers.METEORITE, 4, -2.7F, (new Item.Properties().rarity(Rarity.EPIC)).fireResistant()));
 
 
 //    // CD - TIT(This is THRUD)

@@ -1,4 +1,4 @@
-// 1.20.1	2025-10-27T11:54:35.2781051	Item Models: zsecret_realm
+// 1.20.1	2025-10-27T17:23:11.194831	Item Models: zsecret_realm
 3f8de225ea508def337cac5acf60b17cf60c10c7 assets/zsecret_realm/models/item/alloy_axe.json
 e611bfbbaf912b46aebd735e6078fd2d1f8a08fa assets/zsecret_realm/models/item/alloy_boots.json
 6df16cf17712f27dafb934786dfb17a048a64a31 assets/zsecret_realm/models/item/alloy_boots_amethyst_trim.json
@@ -50,13 +50,22 @@ c8111a3bcd0f6a6f1e3abe334bf4156fe02ffebe assets/zsecret_realm/models/item/alloy_
 9c5fcbb24654e971a18eabb898c2bf9cc539d167 assets/zsecret_realm/models/item/alloy_shovel.json
 87793c729cb2f7eb16a2d8783b4e8f998e25393b assets/zsecret_realm/models/item/alloy_steel_ingot.json
 ab7e8f851ab226881f3248b1b15cf32329db70bd assets/zsecret_realm/models/item/alloy_sword.json
+843099cd5d4725c8c47b6726cc7a04fff9d08fb3 assets/zsecret_realm/models/item/blaze_sword.json
 7ab02312cb742b3a1bc2f14930657f430c67cb15 assets/zsecret_realm/models/item/coal_powder.json
 48b72487920d635f75f990fd5ed99bcb753fe763 assets/zsecret_realm/models/item/ender_ring.json
+3aa40f71373e1874194ef2e61cee13ddb5dd6cbc assets/zsecret_realm/models/item/ender_sword.json
+8ef5f83560c2e5d22054459367d3899a4ffa332f assets/zsecret_realm/models/item/fire_pearl.json
 e8298545f8a47798dadb29063bd54bb375aebdba assets/zsecret_realm/models/item/fire_ring.json
+224a8c6ba4e181bc408515233d63c137ec17f921 assets/zsecret_realm/models/item/ice_axe.json
+7133fb07e87c293797788e9d1e76db8e338bd343 assets/zsecret_realm/models/item/ice_pearl.json
 1591f9b6a013549b0625de2ed9781b6cb31f86ef assets/zsecret_realm/models/item/ice_ring.json
+19f70c9903ffca90ddd14d2eb248453fe35a9b1a assets/zsecret_realm/models/item/light_large_sword.json
+ad80f3d5db754666d01469c8db4c11b1bdf780a7 assets/zsecret_realm/models/item/light_pearl.json
 dfebb83995071fd49284ee34da1fae327b8c594d assets/zsecret_realm/models/item/light_ring.json
 eadaa98d226c8119b2a64596e38b57b896245c3c assets/zsecret_realm/models/item/meteorite_steel_ingot.json
 1daf4d98561fbb5c9b6bfa6ece4a305f35c56d7e assets/zsecret_realm/models/item/raw_iron_with_carbon.json
+7345f9f0ba4f43b57de4834dba2276b3c0d155b8 assets/zsecret_realm/models/item/thunder_axe.json
+9f6bfefe941c554873c74e05456fd726ee408fba assets/zsecret_realm/models/item/thunder_pearl.json
 c90fc9c807fa77fcb6fe228027ba17539245ecd8 assets/zsecret_realm/models/item/thunder_ring.json
 cc07331ebb3617757710531ca3e698bc02e8acaa assets/zsecret_realm/models/item/uzi_axe.json
 3cd6853b8199e2b0120e1bdcb23043fe6563126c assets/zsecret_realm/models/item/uzi_boots.json
@@ -108,4 +117,7 @@ d162c721ba3e3f08eddd26c8e2af837e9225e782 assets/zsecret_realm/models/item/uzi_le
 2eaf8a47681e0c3136a771be3d23bf3a7637e61f assets/zsecret_realm/models/item/uzi_shovel.json
 89bf9d2baad615ae9b29d1d7b4c1d6bcbcac22d8 assets/zsecret_realm/models/item/uzi_steel_ingot.json
 7c9db2c1cb35b8cefd0da1fc588298711c6129a0 assets/zsecret_realm/models/item/uzi_sword.json
+26a3bf1d2c5de693c7064ae0dc7bdb6ab6063c76 assets/zsecret_realm/models/item/wind_pearl.json
 dee0be2ddf2821cf4f1bd4d1033076eccdae8f67 assets/zsecret_realm/models/item/wind_ring.json
+d1df0109b27ff2f0403e7dcc874c00cfbbcd6f02 assets/zsecret_realm/models/item/wind_sword.json
+f40c656ababf18471d0000beb028926bf2f69d68 assets/zsecret_realm/models/item/world_destruct_sword.json
