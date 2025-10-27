@@ -2,6 +2,9 @@ package com.zbc.zsecret_realm.modItems;
 
 import com.zbc.zsecret_realm.Main;
 
+import com.zbc.zsecret_realm.modItems.magicRing.EnderRingItem;
+import com.zbc.zsecret_realm.modItems.magicRing.LightRingItem;
+import com.zbc.zsecret_realm.modItems.magicRing.RingItem;
 import com.zbc.zsecret_realm.modMaterials.ModArmorMaterials;
 import com.zbc.zsecret_realm.modMaterials.ModTiers;
 import net.minecraft.ChatFormatting;
@@ -9,7 +12,6 @@ import net.minecraft.world.item.*;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.minecraft.world.item.Items;
 
 public class ModItems {
 
@@ -67,6 +69,20 @@ public class ModItems {
     // 合金钢靴子
     public static final RegistryObject<ArmorItem> ALLOY_BOOTS = ITEMS.register("alloy_boots", () -> new ArmorItem(ModArmorMaterials.ALLOY, ArmorItem.Type.BOOTS, new Item.Properties()));
 
+    // 风之戒
+    public static final RegistryObject<Item> WIND_RING = ITEMS.register("wind_ring", () -> new RingItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1), "wind_ring"));
+    // 火之戒
+    public static final RegistryObject<Item> FIRE_RING = ITEMS.register("fire_ring", () -> new RingItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1), "fire_ring"));
+    // 冰之戒
+    public static final RegistryObject<Item> ICE_RING = ITEMS.register("ice_ring", () -> new RingItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1), "ice_ring"));
+    // 雷之戒
+    public static final RegistryObject<Item> THUNDER_RING = ITEMS.register("thunder_ring", () -> new RingItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1), "thunder_ring"));
+    // 暗之戒
+    public static final RegistryObject<Item> ENDER_RING = ITEMS.register("ender_ring", () -> new EnderRingItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1), "ender_ring"));
+    // 光之戒
+    public static final RegistryObject<Item> LIGHT_RING = ITEMS.register("light_ring", () -> new LightRingItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1), "light_ring"));
+
+
 //    // 烈焰剑
 //    public static final RegistryObject<Item> BLAZE_SWORD = ITEMS.register("blaze_sword", () -> new BlazeSwordItem(Tiers.NETHERITE, new Item.Properties()));
 //    // 寒冰斧
@@ -78,30 +94,7 @@ public class ModItems {
 //    // 灭世魔刀
 //    public static final RegistryObject<Item> WORLD_DESTRUCT_SWORD = ITEMS.register("world_destruct_sword", () -> new WorldDestructSwordItem(ModTiers.METEORITE, new Item.Properties()));
 
-//    // CD - TIT(This is THRUD)
-//    public static final RegistryObject<Item> CD_TIT = ITEMS.register("cd_tit", () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.CD_TIT_KEY).stacksTo(1)));
-//    // CD - GLORY
-//    public static final RegistryObject<Item> CD_GLORY = ITEMS.register("cd_glory", () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.CD_GLORY_KEY).stacksTo(1)));
-//    // CD - ASHA
-//    public static final RegistryObject<Item> CD_ASHA = ITEMS.register("cd_asha", () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.CD_ASHA_KEY).stacksTo(1)));
-//    // CD - MAGICA
-//    public static final RegistryObject<Item> CD_MAGICA = ITEMS.register("cd_magica", () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.CD_MAGICA_KEY).stacksTo(1)));
-//    // CD - HARVEST
-//    public static final RegistryObject<Item> CD_HARVEST = ITEMS.register("cd_harvest", () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.CD_HARVEST_KEY).stacksTo(1)));
-//
-//    // 风之戒
-//    public static final RegistryObject<Item> WIND_RING = ITEMS.register("wind_ring", () -> new RingItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1)).subtitle("wind_ring"));
-//    // 火之戒
-//    public static final RegistryObject<Item> FIRE_RING = ITEMS.register("fire_ring", () -> new RingItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1)).subtitle("fire_ring"));
-//    // 冰之戒
-//    public static final RegistryObject<Item> ICE_RING = ITEMS.register("ice_ring", () -> new RingItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1)).subtitle("ice_ring"));
-//    // 雷之戒
-//    public static final RegistryObject<Item> THUNDER_RING = ITEMS.register("thunder_ring", () -> new RingItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1)).subtitle("thunder_ring"));
-//    // 暗之戒
-//    public static final RegistryObject<Item> ENDER_RING = ITEMS.register("ender_ring", () -> new EnderRingItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1)).subtitle("ender_ring"));
-//    // 光之戒
-//    public static final RegistryObject<Item> LIGHT_RING = ITEMS.register("light_ring", () -> new LightRingItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1)).subtitle("light_ring"));
-//
+
 //    // 聚风灵珠
 //    public static final RegistryObject<Item> WIND_PEARL = ITEMS.register("wind_pearl", () -> new WindPearlItem(new Item.Properties().stacksTo(16)));
 //    // 爆炎魔珠
@@ -112,9 +105,17 @@ public class ModItems {
 //    public static final RegistryObject<Item> THUNDER_PEARL = ITEMS.register("thunder_pearl", () -> new ThunderPearlItem(new Item.Properties().stacksTo(16)));
 //    // 极光霞珠
 //    public static final RegistryObject<Item> LIGHT_PEARL = ITEMS.register("light_pearl", () -> new LightPearlItem(new Item.Properties().stacksTo(16)));
-//
-//
-//
 
+
+//    // CD - TIT(This is THRUD)
+//    public static final RegistryObject<Item> CD_TIT = ITEMS.register("cd_tit", () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.CD_TIT_KEY).stacksTo(1)));
+//    // CD - GLORY
+//    public static final RegistryObject<Item> CD_GLORY = ITEMS.register("cd_glory", () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.CD_GLORY_KEY).stacksTo(1)));
+//    // CD - ASHA
+//    public static final RegistryObject<Item> CD_ASHA = ITEMS.register("cd_asha", () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.CD_ASHA_KEY).stacksTo(1)));
+//    // CD - MAGICA
+//    public static final RegistryObject<Item> CD_MAGICA = ITEMS.register("cd_magica", () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.CD_MAGICA_KEY).stacksTo(1)));
+//    // CD - HARVEST
+//    public static final RegistryObject<Item> CD_HARVEST = ITEMS.register("cd_harvest", () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.CD_HARVEST_KEY).stacksTo(1)));
 
 }

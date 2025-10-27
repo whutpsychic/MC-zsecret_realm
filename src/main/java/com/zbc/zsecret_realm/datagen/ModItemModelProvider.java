@@ -71,6 +71,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.ALLOY_LEGGINGS);
         trimmedArmorItem(ModItems.ALLOY_BOOTS);
 
+        // 戒指
+        basicItem(ModItems.WIND_RING.get());
+        basicItem(ModItems.FIRE_RING.get());
+        basicItem(ModItems.ICE_RING.get());
+        basicItem(ModItems.THUNDER_RING.get());
+        basicItem(ModItems.ENDER_RING.get());
+        basicItem(ModItems.LIGHT_RING.get());
+
 //        // 传说武器
 //        handheldItem(ModItems.BLAZE_SWORD.get());
 //        handheldItem(ModItems.ICE_AXE.get());
@@ -90,13 +98,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 //        basicItem(ModItems.THUNDER_PEARL.get());
 //        basicItem(ModItems.LIGHT_PEARL.get());
 //
-//        // 戒指
-//        basicItem(ModItems.WIND_RING.get());
-//        basicItem(ModItems.FIRE_RING.get());
-//        basicItem(ModItems.ICE_RING.get());
-//        basicItem(ModItems.THUNDER_RING.get());
-//        basicItem(ModItems.ENDER_RING.get());
-//        basicItem(ModItems.LIGHT_RING.get());
+
 //
 //        // CD
 //        basicItem(ModItems.CD_TIT.get());
