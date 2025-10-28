@@ -1,7 +1,7 @@
 package com.zbc.zsecret_realm.datagen;
 
 import com.zbc.zsecret_realm.Main;
-import com.zbc.zsecret_realm.modItems.ModItems;
+import com.zbc.zsecret_realm.modItem.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;

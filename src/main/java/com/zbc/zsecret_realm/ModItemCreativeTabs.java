@@ -1,11 +1,10 @@
 package com.zbc.zsecret_realm;
 
-import com.zbc.zsecret_realm.modItems.ModItems;
+import com.zbc.zsecret_realm.modItem.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraftforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
@@ -25,6 +24,13 @@ public class ModItemCreativeTabs {
                         output.accept(ModItems.UZI_STEEL_INGOT.get());
                         output.accept(ModItems.ALLOY_STEEL_INGOT.get());
                         output.accept(ModItems.METEORITE_STEEL_INGOT.get());
+
+                        output.accept(ModItems.MILITARY_MEATBALL.get());
+                        output.accept(ModItems.SANDWICH_BREAD.get());
+                        output.accept(ModItems.RAW_SKEWER.get());
+                        output.accept(ModItems.SKEWER.get());
+                        output.accept(ModItems.PUFFERFISH_STEW.get());
+                        output.accept(ModItems.FRUIT_MIX.get());
 
                         output.accept(ModItems.UZI_HOE.get());
                         output.accept(ModItems.UZI_SHOVEL.get());

@@ -1,7 +1,7 @@
 package com.zbc.zsecret_realm.datagen;
 
 import com.zbc.zsecret_realm.Main;
-import com.zbc.zsecret_realm.modItems.ModItems;
+import com.zbc.zsecret_realm.modItem.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -47,6 +47,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.UZI_STEEL_INGOT.get());
         basicItem(ModItems.ALLOY_STEEL_INGOT.get());
         basicItem(ModItems.METEORITE_STEEL_INGOT.get());
+
+        // 食物
+        basicItem(ModItems.MILITARY_MEATBALL.get());
+        basicItem(ModItems.SANDWICH_BREAD.get());
+        basicItem(ModItems.RAW_SKEWER.get());
+        basicItem(ModItems.SKEWER.get());
+        basicItem(ModItems.PUFFERFISH_STEW.get());
+        basicItem(ModItems.FRUIT_MIX.get());
 
         // 注册物品模型
         // 乌兹套

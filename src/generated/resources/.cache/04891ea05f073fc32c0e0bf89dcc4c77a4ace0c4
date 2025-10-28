@@ -1,4 +1,4 @@
-// 1.20.1	2025-10-27T17:23:11.194831	Item Models: zsecret_realm
+// 1.20.1	2025-10-28T11:25:35.6474201	Item Models: zsecret_realm
 3f8de225ea508def337cac5acf60b17cf60c10c7 assets/zsecret_realm/models/item/alloy_axe.json
 e611bfbbaf912b46aebd735e6078fd2d1f8a08fa assets/zsecret_realm/models/item/alloy_boots.json
 6df16cf17712f27dafb934786dfb17a048a64a31 assets/zsecret_realm/models/item/alloy_boots_amethyst_trim.json
@@ -56,6 +56,7 @@ ab7e8f851ab226881f3248b1b15cf32329db70bd assets/zsecret_realm/models/item/alloy_
 3aa40f71373e1874194ef2e61cee13ddb5dd6cbc assets/zsecret_realm/models/item/ender_sword.json
 8ef5f83560c2e5d22054459367d3899a4ffa332f assets/zsecret_realm/models/item/fire_pearl.json
 e8298545f8a47798dadb29063bd54bb375aebdba assets/zsecret_realm/models/item/fire_ring.json
+a1d8b312bc9623b2c753daefe6d46f54af580adc assets/zsecret_realm/models/item/fruit_mix.json
 224a8c6ba4e181bc408515233d63c137ec17f921 assets/zsecret_realm/models/item/ice_axe.json
 7133fb07e87c293797788e9d1e76db8e338bd343 assets/zsecret_realm/models/item/ice_pearl.json
 1591f9b6a013549b0625de2ed9781b6cb31f86ef assets/zsecret_realm/models/item/ice_ring.json
@@ -63,7 +64,12 @@ e8298545f8a47798dadb29063bd54bb375aebdba assets/zsecret_realm/models/item/fire_r
 ad80f3d5db754666d01469c8db4c11b1bdf780a7 assets/zsecret_realm/models/item/light_pearl.json
 dfebb83995071fd49284ee34da1fae327b8c594d assets/zsecret_realm/models/item/light_ring.json
 eadaa98d226c8119b2a64596e38b57b896245c3c assets/zsecret_realm/models/item/meteorite_steel_ingot.json
+934779d0aabb8bf5d2288b8509ce0e67f034d0f8 assets/zsecret_realm/models/item/military_meatball.json
+3323db0a6b23a03c0b629de9ed641ed13ba09cd6 assets/zsecret_realm/models/item/pufferfish_stew.json
 1daf4d98561fbb5c9b6bfa6ece4a305f35c56d7e assets/zsecret_realm/models/item/raw_iron_with_carbon.json
+2b64762d5c507cc27a154d9ce153443af7529d17 assets/zsecret_realm/models/item/raw_skewer.json
+55ada2480de1b65e9a805538cf64f3f98e72e2af assets/zsecret_realm/models/item/sandwich_bread.json
+8750e353d78a8efcb02687937ada3cc10ea869c4 assets/zsecret_realm/models/item/skewer.json
 7345f9f0ba4f43b57de4834dba2276b3c0d155b8 assets/zsecret_realm/models/item/thunder_axe.json
 9f6bfefe941c554873c74e05456fd726ee408fba assets/zsecret_realm/models/item/thunder_pearl.json
 c90fc9c807fa77fcb6fe228027ba17539245ecd8 assets/zsecret_realm/models/item/thunder_ring.json

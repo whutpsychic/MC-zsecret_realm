@@ -1,6 +1,6 @@
 package com.zbc.zsecret_realm;
 
-import com.zbc.zsecret_realm.modItems.ModItems;
+import com.zbc.zsecret_realm.modItem.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;

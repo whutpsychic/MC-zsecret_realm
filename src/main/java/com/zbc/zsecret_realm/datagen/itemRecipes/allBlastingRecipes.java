@@ -1,6 +1,6 @@
 package com.zbc.zsecret_realm.datagen.itemRecipes;
 
-import com.zbc.zsecret_realm.modItems.ModItems;
+import com.zbc.zsecret_realm.modItem.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeCategory;
