@@ -35,4 +35,9 @@ public class LightPearlItem extends Item {
 
         return InteractionResultHolder.sidedSuccess($$3, p_41190_.isClientSide());
     }
+
+//    @Override
+//    public boolean isFoil(ItemStack p_41453_) {
+//        return true;
+//    }
 }

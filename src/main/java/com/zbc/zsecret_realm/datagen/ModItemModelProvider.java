@@ -47,6 +47,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.UZI_STEEL_INGOT.get());
         basicItem(ModItems.ALLOY_STEEL_INGOT.get());
         basicItem(ModItems.METEORITE_STEEL_INGOT.get());
+        basicItem(ModItems.COPPER_ROD.get());
+        basicItem(ModItems.STEEL_ROD.get());
+        basicItem(ModItems.GOLDEN_ROD.get());
+        basicItem(ModItems.MAGIC_PELT.get());
 
         // 食物
         basicItem(ModItems.MILITARY_MEATBALL.get());
@@ -103,6 +107,29 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.LIGHT_LARGE_SWORD);
         handheldItem(ModItems.WORLD_DESTRUCT_SWORD);
 
+        // 水晶&法杖
+        basicItem(ModItems.ORIGINAL_MAGIC_CRYSTAL.get());
+        basicItem(ModItems.ADVANCED_MAGIC_CRYSTAL.get());
+        basicItem(ModItems.WIND_MAGIC_CRYSTAL.get());
+        basicItem(ModItems.FIRE_MAGIC_CRYSTAL.get());
+        basicItem(ModItems.ICE_MAGIC_CRYSTAL.get());
+        basicItem(ModItems.THUNDER_MAGIC_CRYSTAL.get());
+        basicItem(ModItems.ENDER_MAGIC_CRYSTAL.get());
+        basicItem(ModItems.LIGHT_MAGIC_CRYSTAL.get());
+        handheldItem(ModItems.BASIC_MAGIC_STAFF);
+        handheldItem(ModItems.WIND_MAGIC_STAFF);
+        handheldItem(ModItems.FIRE_MAGIC_STAFF);
+        handheldItem(ModItems.ICE_MAGIC_STAFF);
+        handheldItem(ModItems.THUNDER_MAGIC_STAFF);
+        handheldItem(ModItems.ENDER_MAGIC_STAFF);
+        handheldItem(ModItems.LIGHT_MAGIC_STAFF);
+        handheldItem(ModItems.ADVANCED_WIND_STAFF);
+        handheldItem(ModItems.ADVANCED_FIRE_STAFF);
+        handheldItem(ModItems.ADVANCED_ICE_STAFF);
+        handheldItem(ModItems.ADVANCED_THUNDER_STAFF);
+        handheldItem(ModItems.ADVANCED_ENDER_STAFF);
+        handheldItem(ModItems.ADVANCED_LIGHT_STAFF);
+        handheldItem(ModItems.GREAT_SAGE_STAFF);
 
 //        // CD
 //        basicItem(ModItems.CD_TIT.get());

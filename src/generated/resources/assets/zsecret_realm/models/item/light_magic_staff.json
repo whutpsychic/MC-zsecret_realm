@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "zsecret_realm:item/light_magic_staff"
+  }
+}

@@ -16,10 +16,19 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+// 颜色风格:
+// - 原始: 青色
+// - 风: 浅绿
+// - 火: 橙红
+// - 冰: 蓝白
+// - 雷: 金黄
+// - 暗: 墨绿
+// - 光: 黄白
 public class ModItems {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Main.MOD_ID);
 
+    // ------------------------------------------- 基础材料、装备、食物 -------------------------------------------
     // 碳粉
     public static final RegistryObject<Item> COAL_POWDER = ITEMS.register("coal_powder", () -> new ModItem(new Item.Properties(), "coal_powder"));
     // 加碳生铁
@@ -31,7 +40,15 @@ public class ModItems {
     // 合金钢
     public static final RegistryObject<Item> ALLOY_STEEL_INGOT = ITEMS.register("alloy_steel_ingot", () -> new ModItem(new Item.Properties(), "alloy_steel_ingot"));
     // 天外陨铁
-    public static final RegistryObject<Item> METEORITE_STEEL_INGOT = ITEMS.register("meteorite_steel_ingot", () -> new ModItem(new Item.Properties(), "meteorite_steel_ingot", ChatFormatting.YELLOW, true));
+    public static final RegistryObject<Item> METEORITE_STEEL_INGOT = ITEMS.register("meteorite_steel_ingot", () -> new ModItem(new Item.Properties().rarity(Rarity.EPIC), "meteorite_steel_ingot", ChatFormatting.YELLOW, true));
+    // 铜棍
+    public static final RegistryObject<Item> COPPER_ROD = ITEMS.register("copper_rod", () -> new ModItem(new Item.Properties(), "copper_rod", ChatFormatting.YELLOW));
+    // 钢棍
+    public static final RegistryObject<Item> STEEL_ROD = ITEMS.register("steel_rod", () -> new ModItem(new Item.Properties(), "steel_rod", ChatFormatting.YELLOW));
+    // 金棍
+    public static final RegistryObject<Item> GOLDEN_ROD = ITEMS.register("golden_rod", () -> new ModItem(new Item.Properties(), "golden_rod", ChatFormatting.YELLOW));
+    // 蕴魔皮革
+    public static final RegistryObject<Item> MAGIC_PELT = ITEMS.register("magic_pelt", () -> new ModItem(new Item.Properties(), "magic_pelt", ChatFormatting.YELLOW, true));
 
     // 兵粮肉丸
     public static final RegistryObject<Item> MILITARY_MEATBALL = ITEMS.register("military_meatball", () -> new ModItem(new Item.Properties().food(ModFoods.MILITARY_MEATBALL), "military_meatball"));
@@ -84,18 +101,30 @@ public class ModItems {
     // 合金钢靴子
     public static final RegistryObject<ArmorItem> ALLOY_BOOTS = ITEMS.register("alloy_boots", () -> new ArmorItem(ModArmorMaterials.ALLOY, ArmorItem.Type.BOOTS, new Item.Properties()));
 
+//    // CD - TIT(This is THRUD)
+//    public static final RegistryObject<Item> CD_TIT = ITEMS.register("cd_tit", () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.CD_TIT_KEY).stacksTo(1)));
+//    // CD - GLORY
+//    public static final RegistryObject<Item> CD_GLORY = ITEMS.register("cd_glory", () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.CD_GLORY_KEY).stacksTo(1)));
+//    // CD - ASHA
+//    public static final RegistryObject<Item> CD_ASHA = ITEMS.register("cd_asha", () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.CD_ASHA_KEY).stacksTo(1)));
+//    // CD - MAGICA
+//    public static final RegistryObject<Item> CD_MAGICA = ITEMS.register("cd_magica", () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.CD_MAGICA_KEY).stacksTo(1)));
+//    // CD - HARVEST
+//    public static final RegistryObject<Item> CD_HARVEST = ITEMS.register("cd_harvest", () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.CD_HARVEST_KEY).stacksTo(1)));
+
+    // ------------------------------------------- 魔法相关 -------------------------------------------
     // 风之戒
-    public static final RegistryObject<Item> WIND_RING = ITEMS.register("wind_ring", () -> new RingItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1), "wind_ring"));
+    public static final RegistryObject<Item> WIND_RING = ITEMS.register("wind_ring", () -> new RingItem(new Item.Properties().rarity(Rarity.EPIC).fireResistant().stacksTo(1), "wind_ring"));
     // 火之戒
-    public static final RegistryObject<Item> FIRE_RING = ITEMS.register("fire_ring", () -> new RingItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1), "fire_ring"));
+    public static final RegistryObject<Item> FIRE_RING = ITEMS.register("fire_ring", () -> new RingItem(new Item.Properties().rarity(Rarity.EPIC).fireResistant().stacksTo(1), "fire_ring"));
     // 冰之戒
-    public static final RegistryObject<Item> ICE_RING = ITEMS.register("ice_ring", () -> new RingItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1), "ice_ring"));
+    public static final RegistryObject<Item> ICE_RING = ITEMS.register("ice_ring", () -> new RingItem(new Item.Properties().rarity(Rarity.EPIC).fireResistant().stacksTo(1), "ice_ring"));
     // 雷之戒
-    public static final RegistryObject<Item> THUNDER_RING = ITEMS.register("thunder_ring", () -> new RingItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1), "thunder_ring"));
+    public static final RegistryObject<Item> THUNDER_RING = ITEMS.register("thunder_ring", () -> new RingItem(new Item.Properties().rarity(Rarity.EPIC).fireResistant().stacksTo(1), "thunder_ring"));
     // 暗之戒
-    public static final RegistryObject<Item> ENDER_RING = ITEMS.register("ender_ring", () -> new EnderRingItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1), "ender_ring"));
+    public static final RegistryObject<Item> ENDER_RING = ITEMS.register("ender_ring", () -> new EnderRingItem(new Item.Properties().rarity(Rarity.EPIC).fireResistant().stacksTo(1), "ender_ring"));
     // 光之戒
-    public static final RegistryObject<Item> LIGHT_RING = ITEMS.register("light_ring", () -> new LightRingItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1), "light_ring"));
+    public static final RegistryObject<Item> LIGHT_RING = ITEMS.register("light_ring", () -> new LightRingItem(new Item.Properties().rarity(Rarity.EPIC).fireResistant().stacksTo(1), "light_ring"));
 
     // 聚风灵珠
     public static final RegistryObject<Item> WIND_PEARL = ITEMS.register("wind_pearl", () -> new WindPearlItem(new Item.Properties().stacksTo(16)));
@@ -123,16 +152,91 @@ public class ModItems {
     // 灭世魔刀
     public static final RegistryObject<Item> WORLD_DESTRUCT_SWORD = ITEMS.register("world_destruct_sword", () -> new WorldDestructSwordItem(ModTiers.METEORITE, 4, -2.7F, (new Item.Properties().rarity(Rarity.EPIC)).fireResistant()));
 
+    // 原始魔导水晶
+    public static final RegistryObject<Item> ORIGINAL_MAGIC_CRYSTAL = ITEMS.register("original_magic_crystal", () -> new ModItem((new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)), "original_magic_crystal"));
+    // 高阶魔导水晶
+    public static final RegistryObject<Item> ADVANCED_MAGIC_CRYSTAL = ITEMS.register("advanced_magic_crystal", () -> new ModItem((new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)), "advanced_magic_crystal"));
+    // 风魔导水晶
+    public static final RegistryObject<Item> WIND_MAGIC_CRYSTAL = ITEMS.register("wind_magic_crystal", () -> new ModItem((new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)), "wind_magic_crystal", ChatFormatting.DARK_GREEN));
+    // 火魔导水晶
+    public static final RegistryObject<Item> FIRE_MAGIC_CRYSTAL = ITEMS.register("fire_magic_crystal", () -> new ModItem((new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)), "fire_magic_crystal", ChatFormatting.DARK_GREEN));
+    // 冰魔导水晶
+    public static final RegistryObject<Item> ICE_MAGIC_CRYSTAL = ITEMS.register("ice_magic_crystal", () -> new ModItem((new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)), "ice_magic_crystal", ChatFormatting.DARK_GREEN));
+    // 雷魔导水晶
+    public static final RegistryObject<Item> THUNDER_MAGIC_CRYSTAL = ITEMS.register("thunder_magic_crystal", () -> new ModItem((new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)), "thunder_magic_crystal", ChatFormatting.DARK_GREEN));
+    // 暗魔导水晶
+    public static final RegistryObject<Item> ENDER_MAGIC_CRYSTAL = ITEMS.register("ender_magic_crystal", () -> new ModItem((new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)), "ender_magic_crystal", ChatFormatting.DARK_GREEN));
+    // 光魔导水晶
+    public static final RegistryObject<Item> LIGHT_MAGIC_CRYSTAL = ITEMS.register("light_magic_crystal", () -> new ModItem((new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)), "light_magic_crystal", ChatFormatting.DARK_GREEN));
 
-//    // CD - TIT(This is THRUD)
-//    public static final RegistryObject<Item> CD_TIT = ITEMS.register("cd_tit", () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.CD_TIT_KEY).stacksTo(1)));
-//    // CD - GLORY
-//    public static final RegistryObject<Item> CD_GLORY = ITEMS.register("cd_glory", () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.CD_GLORY_KEY).stacksTo(1)));
-//    // CD - ASHA
-//    public static final RegistryObject<Item> CD_ASHA = ITEMS.register("cd_asha", () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.CD_ASHA_KEY).stacksTo(1)));
-//    // CD - MAGICA
-//    public static final RegistryObject<Item> CD_MAGICA = ITEMS.register("cd_magica", () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.CD_MAGICA_KEY).stacksTo(1)));
-//    // CD - HARVEST
-//    public static final RegistryObject<Item> CD_HARVEST = ITEMS.register("cd_harvest", () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.CD_HARVEST_KEY).stacksTo(1)));
+    // 初级魔法手杖
+    public static final RegistryObject<Item> BASIC_MAGIC_STAFF = ITEMS.register("basic_magic_staff", () -> new ModItem((new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)), "basic_magic_staff", ChatFormatting.DARK_GREEN, true));
+    // 风魔导法杖
+    public static final RegistryObject<Item> WIND_MAGIC_STAFF = ITEMS.register("wind_magic_staff", () -> new ModItem((new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)), "wind_magic_staff", ChatFormatting.DARK_GREEN, true));
+    // 炎魔导法杖
+    public static final RegistryObject<Item> FIRE_MAGIC_STAFF = ITEMS.register("fire_magic_staff", () -> new ModItem((new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)), "fire_magic_staff", ChatFormatting.DARK_GREEN, true));
+    // 冰魔导法杖
+    public static final RegistryObject<Item> ICE_MAGIC_STAFF = ITEMS.register("ice_magic_staff", () -> new ModItem((new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)), "ice_magic_staff", ChatFormatting.DARK_GREEN, true));
+    // 雷魔导法杖
+    public static final RegistryObject<Item> THUNDER_MAGIC_STAFF = ITEMS.register("thunder_magic_staff", () -> new ModItem((new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)), "thunder_magic_staff", ChatFormatting.DARK_GREEN, true));
+    // 暗魔导法杖
+    public static final RegistryObject<Item> ENDER_MAGIC_STAFF = ITEMS.register("ender_magic_staff", () -> new ModItem((new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)), "ender_magic_staff", ChatFormatting.DARK_GREEN, true));
+    // 光魔导法杖
+    public static final RegistryObject<Item> LIGHT_MAGIC_STAFF = ITEMS.register("light_magic_staff", () -> new ModItem((new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)), "light_magic_staff", ChatFormatting.DARK_GREEN, true));
+    // 高阶风魔杖
+    public static final RegistryObject<Item> ADVANCED_WIND_STAFF = ITEMS.register("advanced_wind_staff", () -> new ModItem((new Item.Properties().rarity(Rarity.RARE).stacksTo(1)), "advanced_wind_staff", ChatFormatting.RED, true));
+    // 高阶炎魔杖
+    public static final RegistryObject<Item> ADVANCED_FIRE_STAFF = ITEMS.register("advanced_fire_staff", () -> new ModItem((new Item.Properties().rarity(Rarity.RARE).stacksTo(1)), "advanced_fire_staff", ChatFormatting.RED, true));
+    // 高阶冰魔杖
+    public static final RegistryObject<Item> ADVANCED_ICE_STAFF = ITEMS.register("advanced_ice_staff", () -> new ModItem((new Item.Properties().rarity(Rarity.RARE).stacksTo(1)), "advanced_ice_staff", ChatFormatting.RED, true));
+    // 高阶雷魔杖
+    public static final RegistryObject<Item> ADVANCED_THUNDER_STAFF = ITEMS.register("advanced_thunder_staff", () -> new ModItem((new Item.Properties().rarity(Rarity.RARE).stacksTo(1)), "advanced_thunder_staff", ChatFormatting.RED, true));
+    // 高阶暗魔杖
+    public static final RegistryObject<Item> ADVANCED_ENDER_STAFF = ITEMS.register("advanced_ender_staff", () -> new ModItem((new Item.Properties().rarity(Rarity.RARE).stacksTo(1)), "advanced_ender_staff", ChatFormatting.RED, true));
+    // 高阶光魔杖
+    public static final RegistryObject<Item> ADVANCED_LIGHT_STAFF = ITEMS.register("advanced_light_staff", () -> new ModItem((new Item.Properties().rarity(Rarity.RARE).stacksTo(1)), "advanced_light_staff", ChatFormatting.RED, true));
+    // 大贤者法杖
+    public static final RegistryObject<Item> GREAT_SAGE_STAFF = ITEMS.register("great_sage_staff", () -> new ModItem((new Item.Properties().rarity(Rarity.EPIC).fireResistant().stacksTo(1)), "great_sage_staff", ChatFormatting.DARK_RED, true));
 
+    // 魔诡面具(风)
+    // 魔诡面具(火)
+    // 魔诡面具(冰)
+    // 魔诡面具(雷)
+    // 魔诡面具(暗)
+    // 魔诡面具(光)
+    // 法师头套
+    // 魔抗斗篷
+    // 探索者皮裤
+    // 漫游者皮靴
+
+    // 连发魔弓
+    // 爆炎十字弓
+    // 青金石探测仪
+
+    // 唤雷符咒
+    // 晴朗符咒
+    // 致幻药水
+    // 智慧药水
+
+    // ------------------------------------------- 科技相关 -------------------------------------------
+
+    // 铜导线
+    // 基础机器外壳
+    // 火力发电机
+    // 风力发电机
+    // 水力发电机
+    // 太阳能发电机
+    // 小型蓄电池
+    // 大型蓄电池
+    // 矿石粉碎机
+
+
+
+
+
+
+
+
+
+    //
 }

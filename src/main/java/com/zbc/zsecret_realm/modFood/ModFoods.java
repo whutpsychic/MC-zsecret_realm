@@ -7,14 +7,14 @@ import net.minecraft.world.food.FoodProperties;
 public class ModFoods {
 
     // 兵粮肉丸
-    public static final FoodProperties MILITARY_MEATBALL = buildMeatProperty(10, 0.9F).build();
+    public static final FoodProperties MILITARY_MEATBALL = buildMeatProperty(10, 0.9F).fast().build();
     // 夹心面包
     public static final FoodProperties SANDWICH_BREAD = buildFoodProperty(5, 0.9F).build();
     // 生肉串
     public static final FoodProperties RAW_SKEWER = buildMeatProperty(2, 0.3F)
-            .effect(new MobEffectInstance(MobEffects.HUNGER, 600, 0), 0.3F).build();
+            .effect(new MobEffectInstance(MobEffects.HUNGER, 600, 0), 0.3F).fast().build();
     // 烤肉串
-    public static final FoodProperties SKEWER = buildMeatProperty(5, 0.5F).build();
+    public static final FoodProperties SKEWER = buildMeatProperty(5, 0.5F).fast().build();
     // 河豚煲
     public static final FoodProperties PUFFERFISH_STEW = buildMeatProperty(6, 0.6F)
             .effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 20 * 60, 0), 1)

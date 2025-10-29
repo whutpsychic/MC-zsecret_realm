@@ -24,6 +24,10 @@ public class ModItemCreativeTabs {
                         output.accept(ModItems.UZI_STEEL_INGOT.get());
                         output.accept(ModItems.ALLOY_STEEL_INGOT.get());
                         output.accept(ModItems.METEORITE_STEEL_INGOT.get());
+                        output.accept(ModItems.COPPER_ROD.get());
+                        output.accept(ModItems.STEEL_ROD.get());
+                        output.accept(ModItems.GOLDEN_ROD.get());
+                        output.accept(ModItems.MAGIC_PELT.get());
 
                         output.accept(ModItems.MILITARY_MEATBALL.get());
                         output.accept(ModItems.SANDWICH_BREAD.get());
@@ -79,6 +83,31 @@ public class ModItemCreativeTabs {
                         output.accept(ModItems.ENDER_SWORD.get());
                         output.accept(ModItems.LIGHT_LARGE_SWORD.get());
                         output.accept(ModItems.WORLD_DESTRUCT_SWORD.get());
+
+                        output.accept(ModItems.ORIGINAL_MAGIC_CRYSTAL.get());
+                        output.accept(ModItems.ADVANCED_MAGIC_CRYSTAL.get());
+                        output.accept(ModItems.WIND_MAGIC_CRYSTAL.get());
+                        output.accept(ModItems.FIRE_MAGIC_CRYSTAL.get());
+                        output.accept(ModItems.ICE_MAGIC_CRYSTAL.get());
+                        output.accept(ModItems.THUNDER_MAGIC_CRYSTAL.get());
+                        output.accept(ModItems.ENDER_MAGIC_CRYSTAL.get());
+                        output.accept(ModItems.LIGHT_MAGIC_CRYSTAL.get());
+                        output.accept(ModItems.BASIC_MAGIC_STAFF.get());
+                        output.accept(ModItems.WIND_MAGIC_STAFF.get());
+                        output.accept(ModItems.FIRE_MAGIC_STAFF.get());
+                        output.accept(ModItems.ICE_MAGIC_STAFF.get());
+                        output.accept(ModItems.THUNDER_MAGIC_STAFF.get());
+                        output.accept(ModItems.ENDER_MAGIC_STAFF.get());
+                        output.accept(ModItems.LIGHT_MAGIC_STAFF.get());
+                        output.accept(ModItems.ADVANCED_WIND_STAFF.get());
+                        output.accept(ModItems.ADVANCED_FIRE_STAFF.get());
+                        output.accept(ModItems.ADVANCED_ICE_STAFF.get());
+                        output.accept(ModItems.ADVANCED_THUNDER_STAFF.get());
+                        output.accept(ModItems.ADVANCED_ENDER_STAFF.get());
+                        output.accept(ModItems.ADVANCED_LIGHT_STAFF.get());
+                        output.accept(ModItems.GREAT_SAGE_STAFF.get());
+
+
                     }).build());
 
 //    // 秘境传说：科技
