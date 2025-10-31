@@ -3,6 +3,7 @@
   "itemGroup.zsecret_realm.main_tab": "Secret Forest: Normal",
   "itemGroup.zsecret_realm.magic_tab": "Secret Forest: Magic",
   "itemGroup.zsecret_realm.tech_tab": "Secret Forest: Technology",
+
   "item.zsecret_realm.coal_powder": "Coal Powder",
   "item.zsecret_realm.raw_iron_with_carbon": "Raw iron with carbon",
   "item.zsecret_realm.alloy_material": "Alloy Material",
@@ -55,7 +56,6 @@
   "item.zsecret_realm.ender_sword": "Ender Sword",
   "item.zsecret_realm.light_large_sword": "Light Large Sword",
   "item.zsecret_realm.world_destruct_sword": "World Destruct Sword",
-
   "item.zsecret_realm.original_magic_crystal": "Original Magic Crystal",
   "item.zsecret_realm.advanced_magic_crystal": "Advanced Magic Crystal",
   "item.zsecret_realm.wind_magic_crystal": "Wind Magic Crystal",
@@ -78,6 +78,17 @@
   "item.zsecret_realm.advanced_ender_staff": "Advanced Ender Staff",
   "item.zsecret_realm.advanced_light_staff": "Advanced Light Staff",
   "item.zsecret_realm.great_sage_staff": "Great Sage Staff",
+  "item.zsecret_realm.weird_mask_wind": "Weird Mask(wind)",
+  "item.zsecret_realm.weird_mask_fire": "Weird Mask(fire)",
+  "item.zsecret_realm.weird_mask_ice": "Weird Mask(ice)",
+  "item.zsecret_realm.weird_mask_thunder": "Weird Mask(thunder)",
+  "item.zsecret_realm.weird_mask_ender": "Weird Mask(ender)",
+  "item.zsecret_realm.weird_mask_light": "Weird Mask(light)",
+  "item.zsecret_realm.explorer_pants": "Explorer Pants",
+  "item.zsecret_realm.wanderer_boots": "Wanderer Boots",
+  "item.zsecret_realm.thunder_spell": "Thunder Spell",
+  "item.zsecret_realm.sunny_spell": "Sunny Spell",
+  "item.zsecret_realm.summon_spell": "Summon Spell",
 
   "subtitle.coal_powder": "It is not recommended to use it as fuel, as it has its own purposes",
   "subtitle.raw_iron_with_carbon": "This is used to make uzi iron ingot",
@@ -128,7 +139,6 @@
   "subtitle.advanced_ender_staff": "Unknown",
   "subtitle.advanced_light_staff": "Clear",
   "subtitle.great_sage_staff": "Ever Changing",
-
   "item.zsecret_realm.cd_tit": "CD",
   "item.zsecret_realm.cd_glory": "CD",
   "item.zsecret_realm.cd_asha": "CD",

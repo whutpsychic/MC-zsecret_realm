@@ -3,6 +3,7 @@
   "itemGroup.zsecret_realm.main_tab": "秘境传说: 常规",
   "itemGroup.zsecret_realm.magic_tab": "秘境传说: 魔法",
   "itemGroup.zsecret_realm.tech_tab": "秘境传说: 科技",
+
   "item.zsecret_realm.coal_powder": "碳粉",
   "item.zsecret_realm.raw_iron_with_carbon": "加碳生铁",
   "item.zsecret_realm.alloy_material": "合金材料",
@@ -55,7 +56,6 @@
   "item.zsecret_realm.ender_sword": "暗影剑",
   "item.zsecret_realm.light_large_sword": "光之大剑",
   "item.zsecret_realm.world_destruct_sword": "灭世魔刀",
-
   "item.zsecret_realm.original_magic_crystal": "原始魔导水晶",
   "item.zsecret_realm.advanced_magic_crystal": "高阶魔导水晶",
   "item.zsecret_realm.wind_magic_crystal": "风魔导水晶",
@@ -78,6 +78,17 @@
   "item.zsecret_realm.advanced_ender_staff": "高阶暗魔杖",
   "item.zsecret_realm.advanced_light_staff": "高阶光魔杖",
   "item.zsecret_realm.great_sage_staff": "大贤者法杖",
+  "item.zsecret_realm.weird_mask_wind": "魔诡面具(风)",
+  "item.zsecret_realm.weird_mask_fire": "魔诡面具(火)",
+  "item.zsecret_realm.weird_mask_ice": "魔诡面具(冰)",
+  "item.zsecret_realm.weird_mask_thunder": "魔诡面具(雷)",
+  "item.zsecret_realm.weird_mask_ender": "魔诡面具(暗)",
+  "item.zsecret_realm.weird_mask_light": "魔诡面具(光)",
+  "item.zsecret_realm.explorer_pants": "探索者皮裤",
+  "item.zsecret_realm.wanderer_boots": "漫游者皮靴",
+  "item.zsecret_realm.thunder_spell": "唤雷符咒",
+  "item.zsecret_realm.sunny_spell": "晴朗符咒",
+  "item.zsecret_realm.summon_spell": "唤魔符咒",
 
   "subtitle.coal_powder": "已无法再作为燃料，它有它自己的用途",
   "subtitle.raw_iron_with_carbon": "用于烧制乌兹钢锭",
@@ -128,7 +139,6 @@
   "subtitle.advanced_ender_staff": "未知",
   "subtitle.advanced_light_staff": "清澈",
   "subtitle.great_sage_staff": "变化多端",
-
   "item.zsecret_realm.cd_tit": "音乐唱片",
   "item.zsecret_realm.cd_glory": "音乐唱片",
   "item.zsecret_realm.cd_asha": "音乐唱片",

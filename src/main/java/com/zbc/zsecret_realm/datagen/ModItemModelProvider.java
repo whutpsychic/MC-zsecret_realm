@@ -123,13 +123,28 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.THUNDER_MAGIC_STAFF);
         handheldItem(ModItems.ENDER_MAGIC_STAFF);
         handheldItem(ModItems.LIGHT_MAGIC_STAFF);
-        handheldItem(ModItems.ADVANCED_WIND_STAFF);
+//        handheldItem(ModItems.ADVANCED_WIND_STAFF);
         handheldItem(ModItems.ADVANCED_FIRE_STAFF);
         handheldItem(ModItems.ADVANCED_ICE_STAFF);
         handheldItem(ModItems.ADVANCED_THUNDER_STAFF);
         handheldItem(ModItems.ADVANCED_ENDER_STAFF);
         handheldItem(ModItems.ADVANCED_LIGHT_STAFF);
         handheldItem(ModItems.GREAT_SAGE_STAFF);
+
+        // 魔法服装
+        trimmedArmorItem(ModItems.WEIRD_MASK_WIND);
+        trimmedArmorItem(ModItems.WEIRD_MASK_FIRE);
+        trimmedArmorItem(ModItems.WEIRD_MASK_ICE);
+        trimmedArmorItem(ModItems.WEIRD_MASK_THUNDER);
+        trimmedArmorItem(ModItems.WEIRD_MASK_ENDER);
+        trimmedArmorItem(ModItems.WEIRD_MASK_LIGHT);
+        trimmedArmorItem(ModItems.EXPLORER_PANTS);
+        trimmedArmorItem(ModItems.WANDERER_BOOTS);
+
+        // 其他工具物品
+        basicItem(ModItems.THUNDER_SPELL.get());
+        basicItem(ModItems.SUNNY_SPELL.get());
+        basicItem(ModItems.SUMMON_SPELL.get());
 
 //        // CD
 //        basicItem(ModItems.CD_TIT.get());

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "zsecret_realm:item/advanced_wind_staff"
+    "layer0": "zsecret_realm:item/advanced_wind_staff_2d"
   }
 }

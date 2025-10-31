@@ -199,27 +199,42 @@ public class ModItems {
     public static final RegistryObject<Item> GREAT_SAGE_STAFF = ITEMS.register("great_sage_staff", () -> new ModItem((new Item.Properties().rarity(Rarity.EPIC).fireResistant().stacksTo(1)), "great_sage_staff", ChatFormatting.DARK_RED, true));
 
     // 魔诡面具(风)
+    public static final RegistryObject<ArmorItem> WEIRD_MASK_WIND = ITEMS.register("weird_mask_wind", () -> new ArmorItem(ArmorMaterials.LEATHER, ArmorItem.Type.HELMET, new Item.Properties().rarity(Rarity.UNCOMMON)));
     // 魔诡面具(火)
+    public static final RegistryObject<ArmorItem> WEIRD_MASK_FIRE = ITEMS.register("weird_mask_fire", () -> new ArmorItem(ArmorMaterials.LEATHER, ArmorItem.Type.HELMET, new Item.Properties().rarity(Rarity.UNCOMMON)));
     // 魔诡面具(冰)
+    public static final RegistryObject<ArmorItem> WEIRD_MASK_ICE = ITEMS.register("weird_mask_ice", () -> new ArmorItem(ArmorMaterials.LEATHER, ArmorItem.Type.HELMET, new Item.Properties().rarity(Rarity.UNCOMMON)));
     // 魔诡面具(雷)
+    public static final RegistryObject<ArmorItem> WEIRD_MASK_THUNDER = ITEMS.register("weird_mask_thunder", () -> new ArmorItem(ArmorMaterials.LEATHER, ArmorItem.Type.HELMET, new Item.Properties().rarity(Rarity.UNCOMMON)));
     // 魔诡面具(暗)
+    public static final RegistryObject<ArmorItem> WEIRD_MASK_ENDER = ITEMS.register("weird_mask_ender", () -> new ArmorItem(ArmorMaterials.LEATHER, ArmorItem.Type.HELMET, new Item.Properties().rarity(Rarity.UNCOMMON)));
     // 魔诡面具(光)
-    // 法师头套
-    // 魔抗斗篷
+    public static final RegistryObject<ArmorItem> WEIRD_MASK_LIGHT = ITEMS.register("weird_mask_light", () -> new ArmorItem(ArmorMaterials.LEATHER, ArmorItem.Type.HELMET, new Item.Properties().rarity(Rarity.UNCOMMON)));
     // 探索者皮裤
+    public static final RegistryObject<ArmorItem> EXPLORER_PANTS = ITEMS.register("explorer_pants", () -> new ArmorItem(ArmorMaterials.LEATHER, ArmorItem.Type.LEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON)));
     // 漫游者皮靴
+    public static final RegistryObject<ArmorItem> WANDERER_BOOTS = ITEMS.register("wanderer_boots", () -> new ArmorItem(ArmorMaterials.LEATHER, ArmorItem.Type.BOOTS, new Item.Properties().rarity(Rarity.UNCOMMON)));
+    // 刺客短匕
+    public static final RegistryObject<Item> ASSASSIN_DAGGER = ITEMS.register("assassin_dagger", () -> new SwordItem(ModTiers.UZI, 5, 0F, new Item.Properties()));
+    // 恶魔之斧
+    public static final RegistryObject<Item> DEVIL_AXE = ITEMS.register("devil_axe", () -> new ThunderAxeItem(ModTiers.METEORITE, 10, -4, (new Item.Properties().rarity(Rarity.EPIC)).fireResistant()));
+    // 掘进者之镐
+    public static final RegistryObject<Item> DIGGING_PICKAXE = ITEMS.register("digging_pickaxe", () -> new PickaxeItem(ModTiers.ALLOY, 1, -2.8F, new Item.Properties()));
 
     // 连发魔弓
     // 爆炎十字弓
     // 青金石探测仪
 
     // 唤雷符咒
+    public static final RegistryObject<Item> THUNDER_SPELL = ITEMS.register("thunder_spell", () -> new ModItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(16), "thunder_spell"));
     // 晴朗符咒
+    public static final RegistryObject<Item> SUNNY_SPELL = ITEMS.register("sunny_spell", () -> new ModItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(16), "sunny_spell"));
+    // 唤魔符咒
+    public static final RegistryObject<Item> SUMMON_SPELL = ITEMS.register("summon_spell", () -> new ModItem(new Item.Properties().rarity(Rarity.EPIC).stacksTo(16), "summon_spell"));
     // 致幻药水
     // 智慧药水
 
     // ------------------------------------------- 科技相关 -------------------------------------------
-
     // 铜导线
     // 基础机器外壳
     // 火力发电机
@@ -229,13 +244,6 @@ public class ModItems {
     // 小型蓄电池
     // 大型蓄电池
     // 矿石粉碎机
-
-
-
-
-
-
-
 
 
     //

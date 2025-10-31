@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "zsecret_realm:item/advanced_wind_staff_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "zsecret_realm:item/advanced_wind_staff_2d"
+    },
+    "ground": {
+      "parent": "zsecret_realm:item/advanced_wind_staff_2d"
+    },
+    "fixed": {
+      "parent": "zsecret_realm:item/advanced_wind_staff_2d"
+    }
+  }
+}
